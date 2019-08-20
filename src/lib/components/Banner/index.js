@@ -11,7 +11,6 @@ import { animationBuilder } from "../utils/animationBuilder"
 
 type BannerProps = {
     customStyle?:Object,
-    isCanelable:boolean,
     children:Node,
     isShow:boolean,
     bodyClick?:() => {},
@@ -21,7 +20,6 @@ type BannerProps = {
 const Banner = (props:BannerProps) => {
     const { 
         customStyle, 
-        isCanelable, 
         isShow,
         bodyClick,
         text
@@ -44,7 +42,6 @@ const Banner = (props:BannerProps) => {
             isShow={isShow}
             bodyClick={bodyClick}
             animationObj={fade}
-            isCanelable={isCanelable}
             isCard={true}
             Component={() =>
                 <div className="shadow" style={{...style, ...customStyle}}>
@@ -64,7 +61,6 @@ const Banner = (props:BannerProps) => {
 }
 
 Banner.defaultProps = {
-    isCanelable:true
 }
 
 function renderBanner(id:string, config:BannerProps) {
@@ -80,7 +76,6 @@ function renderBanner(id:string, config:BannerProps) {
 
     const { 
         customStyle, 
-        isCanelable, 
         isShow,
         bodyClick,
         text
@@ -109,7 +104,6 @@ function renderBanner(id:string, config:BannerProps) {
                 renderBanner(id, nextConfig);
             }}
             animationObj={fade}
-            isCanelable={isCanelable}
             isCard={true}
             Component={() =>
                 <div className="shadow" style={{...style, ...customStyle}}>

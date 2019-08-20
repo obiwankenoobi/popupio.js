@@ -5,7 +5,6 @@ import { isS } from 'xmlchars/xml/1.0/ed5';
 
 type AnimateProps = {
     Component:() => Node,
-    isCanelable:boolean,
     animationObj:AnimationStyleObject,
     isCard?:boolean,
     isShow:boolean,
@@ -26,8 +25,7 @@ const Animate = (props:AnimateProps) => {
         isCard, 
         deley,
         isShow,
-        bodyClick,
-        isCanelable
+        bodyClick
     } = props;
     const [isRender, setRender] = useState(isShow);
     const [isAnimate, setAnimate] = useState(isShow);

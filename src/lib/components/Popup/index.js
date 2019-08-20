@@ -16,7 +16,6 @@ type PopupProps = {
     customBodyContainerStyle?:Object,
     customBodyStyle?:Object,
     customButtonContainerStyle?:Object,
-    isCanelable:boolean,
     isShow:boolean,
     bodyClick?:() => {},
     Component:Node,
@@ -27,7 +26,6 @@ type PopupProps = {
 const PopupAnimated = (props:PopupProps) => {
 
     const { 
-        isCanelable, 
         onButtonClick, 
         title, 
         button,
@@ -50,11 +48,10 @@ const PopupAnimated = (props:PopupProps) => {
             isShow={isShow}
             bodyClick={bodyClick}
             animationObj={fade}
-            isCanelable={isCanelable}
             Component={() =>
                 <Card 
                     isPopup={true}
-                    isCanelable={isCanelable}
+    
                     onClick={onButtonClick}
                     title={title}
                     body={body}
@@ -103,7 +100,7 @@ function renderPopup(id:string, config:PopupProps) {
         throw new Error(`No DOM element with id "${id}`)
 
     const { 
-        isCanelable, 
+        
         onButtonClick, 
         title, 
         button,
@@ -135,11 +132,11 @@ function renderPopup(id:string, config:PopupProps) {
                 renderPopup(id, nextConfig);
             }}
             animationObj={fade}
-            isCanelable={isCanelable}
+            
             Component={() =>
                 <Card 
                     isPopup={true}
-                    isCanelable={isCanelable}
+                    
                     onClick={onButtonClick}
                     title={title}
                     body={body}

@@ -192,7 +192,6 @@ export const Card = (props:CardProps) => {
 
 
 export type AnimatedComponentProps = {
-    isCanelable:boolean,
     isShow:boolean,
     bodyClick?:() => {},
     Component:Node
@@ -200,7 +199,6 @@ export type AnimatedComponentProps = {
 
 export const AnimatedComponent = (props:AnimateCardProps) => {
     const { 
-        isCanelable, 
         isShow,
         bodyClick,
         Component
@@ -214,7 +212,6 @@ export const AnimatedComponent = (props:AnimateCardProps) => {
             isShow={isShow}
             bodyClick={bodyClick}
             animationObj={fade}
-            isCanelable={isCanelable}
             Component={Component}
         />
 
@@ -233,7 +230,6 @@ type AnimatedCardProps = {
     customButtonContainerStyle?:Object,
     customBodyContainerStyle?:Object,
     customBodyStyle?:Object,
-    isCanelable:boolean,
     isShow:boolean,
     bodyClick?:() => {},
     Component:Node
@@ -242,7 +238,6 @@ type AnimatedCardProps = {
 const AnimatedCard = (props:AnimatedCardProps) => {
 
     const { 
-        isCanelable, 
         onButtonClick, 
         title, 
         button,
@@ -265,10 +260,9 @@ const AnimatedCard = (props:AnimatedCardProps) => {
             isShow={isShow}
             bodyClick={bodyClick}
             animationObj={fade}
-            isCanelable={isCanelable}
             Component={() => 
                 <Card 
-                    isCanelable={isCanelable}
+    
                     onClick={onButtonClick}
                     title={title}
                     body={body}
@@ -300,7 +294,6 @@ function renderCard(id:string, config:AnimatedCardProps) {
     const fade = fadeAnimation(300);
     
     const {
-        isCanelable, 
         onButtonClick, 
         title, 
         button,
@@ -328,10 +321,9 @@ function renderCard(id:string, config:AnimatedCardProps) {
                 }
             }
             animationObj={fade}
-            isCanelable={isCanelable}
             Component={() => 
                 <Card 
-                    isCanelable={isCanelable}
+    
                     onClick={onButtonClick}
                     title={title}
                     body={body}

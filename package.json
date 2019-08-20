@@ -1,6 +1,6 @@
 {
   "name": "popupio",
-  "version": "0.0.39.19r",
+  "version": "0.0.39.20r",
   "description": "add popups and banners to your app without any hustle",
   "main": "build/index.js",
   "scripts": {

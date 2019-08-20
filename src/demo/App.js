@@ -33,7 +33,6 @@ const App = () => {
       bodyClick:() => setShowCard(!isShowCard),
       isShow:isShowCard,
       button:"Hello world",
-      isCanelable:true,
       customBodyContainerStyle: {
         padding:"0px",
       },
@@ -76,7 +75,6 @@ const App = () => {
         padding:"0px",
       },
       button:"Hello world",
-      isCanelable:true,
       onButtonClick:() => console.log("click"),
       title:"Hello world",
       body:(
@@ -106,7 +104,6 @@ const App = () => {
         }}
         isShow={isShowPopup}
         button={"Hello world"}
-        isCanelable={true}
         onButtonClick={() => console.log("click")}
         customHeaderStyle={{backgroundColor:"#5bc0de"}}
         title="Hello world"
@@ -135,7 +132,6 @@ const App = () => {
         isShow={isShowCard}
         button={"Hello world"}
         customHeaderStyle={{backgroundColor:"#5bc0de"}}
-        isCanelable={true}
         onButtonClick={() => console.log("click")}
         title="Hello world"
         body="Fugiat pariatur culpa enim officia et ea aliquip ad dolore sunt incididunt irure. Duis velit excepteur sint anim ut mollit fugiat adipisicing commodo sint cillum culpa. Laboris aliqua do sunt anim fugiat nostrud non ipsum velit. Commodo voluptate et enim aliqua deserunt dolor non."
