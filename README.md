@@ -3,7 +3,7 @@ This is a collection of components for pupups cards and banners for your website
 
 I have built this collection so you wont have to hustle! At the moment it has 3 componenats and those are the main component you will need.
 
-**Popupio** run ***ANYWHERE***. It doesnt matter if you use `React`, `Vue` `Angular` or `Vanila`. It will work for you!
+**Popupio** run ***ANYWHERE***. It doesnt matter if you use `React`, `Vue` `Angular` or `Vanilla`. It will work for you!
 
 
 **Examples and documintation in the [website](https://popupio.netlify.com)!**
