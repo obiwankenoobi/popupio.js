@@ -180,7 +180,7 @@ export const Card = (props:CardProps) => {
                         color:"#BFBFBF",
                         paddingTop:"10px",                    
                 }}>
-                    <p  >Powered by <a rel="noopener noreferrer" target="_blank" href="https://popupio.netlify.com">popupio.com</a></p>
+                    <p  >Powered by <a rel="noopener noreferrer" target="_blank" href="https://popupio.com">popupio.com</a></p>
                 </div>
             </div>
         }
